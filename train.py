@@ -1,3 +1,7 @@
+import os
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
+
 from denoising_diffusion_pytorch import Unet, GaussianDiffusion, Trainer
 
 model = Unet(
