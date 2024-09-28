@@ -15,7 +15,7 @@ diffusion = GaussianDiffusion(
 
 trainer = Trainer(
     diffusion,
-    './data',
+    './data/VELOLL_Normal_train',
     train_batch_size = 32,
     train_lr = 8e-5,
     train_num_steps = 700000,         # total training steps
